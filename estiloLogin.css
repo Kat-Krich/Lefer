@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: rgb(177, 209, 230);
+}
+
+#Main {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.MeiaTela {
+    display: flex;
+    width: 50%;
+}
+
+#LadoEsquerda {
+    margin: 35vh 15vh 0 0;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#LadoEsquerda > header > div{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 19vh;
+    gap: 20px;
+}
+
+#LadoEsquerda > header > h2{
+    padding: 15px 0; 
+    font-size: 4.5vh; 
+    text-align: justify; 
+    width:82vh;
+}
+    
+#LadoEsquerda > nav{
+    display: flex;
+    width: 83vh;
+    justify-content: space-evenly;
+}
+
+#LadoEsquerda > nav > button {
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(52, 130, 179);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 650;
+    font-size: 4vh;
+    width: 35vh;
+    height: 8vh;
+}
+
+#LadoEsquerda > nav > button:hover {
+    font-size: 5vh;
+    width: 36vh;
+    height: 9vh;
+}
+
+#LadoDireito > img{
+    clip-path: ellipse(55% 100% at 55% 50%);
+}
+
+#Login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#Login .card-conteudo {
+    background-color: #d8effb;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.texto {
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    color: rgb(0, 14, 23);
+}
