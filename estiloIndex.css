@@ -1,0 +1,8 @@
+#MenuLateral{
+    background-color: rgb(28, 191, 255);
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 10px;
+    position: fixed;
+}
