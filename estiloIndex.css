@@ -1,9 +1,15 @@
 #MenuLateral{
-    background-color: rgb(28, 191, 255);
+    background-color: rgb(52, 130, 179);
     top: 0;
     left: 0;
     height: 100%;
-    width: 7.5%;
+    width: 5%;
     position: fixed;
-    overflow-x: hidden;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
 }
+
