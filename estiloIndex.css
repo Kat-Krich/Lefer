@@ -18,7 +18,8 @@
     justify-self: flex-end;
     align-self: flex-start;
     flex-direction: column;
-    width: 94%;
+    width: 89%;
+    margin-right: 3%;
 }
 
 #Intro{
@@ -28,11 +29,9 @@
 
 #BemVindo{
     display: flex;
-    margin-left: auto;
-    margin-top: auto;
+    margin: 0 20px 0 auto;
     align-self: center;
     font-size: 70px;
-    margin-right: 20px;
 }
 
 #Logo{
@@ -46,12 +45,9 @@ h2{
     display: flex;
     background-color: #3481b2;
     justify-self: flex-start;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px default 0px default;
     border-radius: 15px 60px 0px 0px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding: 10px 20px 10px;
     width: 400px;
 }
 
@@ -74,7 +70,7 @@ h2{
 
 #icone{
     background-color: #3481b2;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     margin: 30px;
 }
