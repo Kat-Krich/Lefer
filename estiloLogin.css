@@ -6,7 +6,6 @@
 html, body {
     background-color: rgb(177, 209, 230);
 }
-
 #Main {
     display: flex;
     flex-wrap: nowrap;
@@ -87,11 +86,11 @@ html, body {
     text-align: center;
 }
 
-.texto {
+/*.texto {
     font-family: "Libre Baskerville", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     line-height: 1;
     color: rgb(0, 14, 23);
-}
+}*/
