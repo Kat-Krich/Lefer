@@ -1,0 +1,24 @@
+{
+  "name": "lefer",
+  "version": "1.0.0",
+  "description": "Server do site Lefer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kat-Krich/Lefer.git"
+  },
+  "author": "Katarina Krich, Gustavo Yuri, Kaua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kat-Krich/Lefer/issues"
+  },
+  "homepage": "https://github.com/Kat-Krich/Lefer#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1"
+  }
+}
