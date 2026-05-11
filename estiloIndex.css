@@ -69,10 +69,19 @@ h2{
 }
 
 .secao {
-    display: flex;
+    display: none;
     justify-self: flex-end;
     align-self: flex-start;
     flex-direction: column;
     width: 89%;
     margin-right: 3%;
+}
+
+#Home {
+    display: flex;
+}
+
+#Botao{
+    background-color: transparent;
+    border: transparent;
 }
