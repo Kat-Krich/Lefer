@@ -5,3 +5,11 @@ function mostrarLogin(){
 function fecharLogin() {
     document.getElementById("Login").style.display = "none";
 }
+
+function mostrarCadastro(){
+    var telaCad = document.getElementById("Cadastro");
+    telaCad.style.display = "flex";
+}
+function fecharCadastro() {
+    document.getElementById("Cadastro").style.display = "none";
+}
