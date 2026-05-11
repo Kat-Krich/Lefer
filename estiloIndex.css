@@ -83,6 +83,17 @@ h2{
     display: flex;
 }
 
+#Busca{
+    display: flex;
+}
+
+#Metas{
+    display: flex;
+}
+
+#Biblioteca{
+    display: flex;
+}
 .botaoMenu{
     background-color: transparent;
     border: transparent;
