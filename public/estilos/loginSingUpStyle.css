@@ -3,7 +3,7 @@ html, body{
 }
 
 body {
-    background-image: url("imagens/biblioteca.webp");
+    background-image: url("../imagens/biblioteca.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
