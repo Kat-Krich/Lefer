@@ -13,14 +13,6 @@
     flex-wrap: nowrap;
 }
 
-#Menu{
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-start;
-    flex-direction: column;
-    width: 89%;
-    margin-right: 3%;
-}
 
 #Intro{
     display: flex;
@@ -74,4 +66,13 @@ h2{
     border-radius: 30px;
     padding: 20px;
     margin: 30px;
+}
+
+.secao {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 89%;
+    margin-right: 3%;
 }
