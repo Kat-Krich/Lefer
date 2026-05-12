@@ -37,11 +37,12 @@ h2{
     font-size: 35px;
     display: flex;
     background-color: #3481b2;
-    justify-self: flex-start;
-    margin: 0px default 0px default;
+    color: white;
+    margin-bottom: 0px;
     border-radius: 15px 60px 0px 0px;
-    padding: 10px 20px 10px;
-    width: 400px;
+    width: fit-content;
+    padding: 10px 40px 10px 20px;
+    display: block;
 }
 
 .livros{
@@ -49,9 +50,27 @@ h2{
     background-color: #d2effe;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 10px;
+    padding: 20px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    border-radius: 0px 15px 15px 15px;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+.card_livros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Largura fixa para manter o padrão da imagem */
+}
+
+.card_livros img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 #Ajuda{
@@ -97,4 +116,8 @@ h2{
 .btnNavegacao {
     background-color: transparent;
     border: none;
+}
+
+.livros >img:hover{
+    transform: scale(1.1);
 }

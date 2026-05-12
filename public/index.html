@@ -52,13 +52,22 @@
                 </div>
                 
                     <h2  class = "texto">Meus Livros</h2>
-                        <div class = "livros">
-                            <img src = "imagens/logo.png" width="auto" height="auto">
-                        </div>
+
+                    <button></button>
+
+                    <div id="form-livro" style="display:none;">
+                        <input id="titulo" placeholder="Título">
+                        <input id="autor" placeholder="Autor">
+                        <input id="capa" placeholder="Capa (URL)">
+    
+                        <button onclick="adicionarLivro()">Salvar</button>
+                    </div>
+                        <div class = "livros" id = "meus_livros"></div>
                         
-                        <h2  class = "texto">Recomendações</h2>
-                        <div class = "livros">
-                            <img src = "imagens/logo.png" width="auto" height="auto">
+                    <h2  class = "texto">Recomendações</h2>
+                    
+                    <div class = "livros" id="lista_recomendacoes">
+                        
                     </div>
 
                 
@@ -102,6 +111,6 @@
             </section>
 
         </main>
-        <script type="text/javascript" src="script.js"></script>
+        <script src="/script.js"></script>
     </body>
 </html>
