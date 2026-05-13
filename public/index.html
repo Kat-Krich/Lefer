@@ -17,32 +17,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav id = "MenuLateral">
+            <button id="btnBusca" onclick="mostrarMenu(this.id) " class="btnNavegacao">
+                <img src ="imagens/lupa.png" class="imagem">
+            </button>
+            <button id="btnHome" onclick="mostrarMenu(this.id)" class="btnNavegacao">
+                <img src ="imagens/home.png" class="imagem">
+            </button>
+            <button id="btnMetas" onclick="mostrarMenu(this.id)" class="btnNavegacao">
+                <img src ="imagens/target.png" class="imagem">  
+            </button>
+            <button id="btnBiblioteca" onclick="mostrarMenu(this.id)" class="btnNavegacao">
+                <img src ="imagens/biblioteca.png" class="imagem">      
+            </button>
+            <button id="btnSair" class="btnNavegacao">
+                <a href = "loginSingUp.html">
+                    <img src = "imagens/exit.png" class="imagem">
+                </a>
+            </button>
+        </nav>      
         <main id = "Main">
-            <nav id = "MenuLateral">
-                <button id="btnBusca" onclick="mostrarMenu(this.id) " class="btnNavegacao">
-                    <img src ="imagens/lupa.png" class="imagem">
-                </button>
-                <button id="btnHome" onclick="mostrarMenu(this.id)" class="btnNavegacao">
-                    <img src ="imagens/home.png" class="imagem">
-                </button>
-                <button id="btnMetas" onclick="mostrarMenu(this.id)" class="btnNavegacao">
-                    <img src ="imagens/target.png" class="imagem">  
-                </button>
-                <button id="btnBiblioteca" onclick="mostrarMenu(this.id)" class="btnNavegacao">
-                    <img src ="imagens/biblioteca.png" class="imagem">      
-                </button>
-                <button id="btnSair" class="btnNavegacao">
-                    <a href = "loginSingUp.html">
-                        <img src = "imagens/exit.png" class="imagem">
-                    </a>
-                </button>
-            </nav>
-
             <div id = "Ajuda">
                 <h3 class = "texto">Precisa de ajuda?</h3>
                 <a href = "index.html">
                     <img src = "imagens/ajuda.png" width="80px" height="80px" id = iconeAjuda>
                 </a>
+            </div>
+            <div id="InfoLivro">
+                <div id="detalhes_livro" style="display:none;">
+        
+                </div>
             </div>
 
             <section id = "Home" class="secao">
@@ -50,27 +54,26 @@
                     <h1 class = "texto" id = "BemVindo">Bem Vindo</h1>
                     <img src = "imagens/logoLefer.png" width="auto" height="auto" id = "Logo">
                 </div>
-                
+                <div id="MeusLivros">
                     <h2  class = "texto">Meus Livros</h2>
-
-                    <button></button>
-
-                    <div id="form-livro" style="display:none;">
-                        <input id="titulo" placeholder="Título">
-                        <input id="autor" placeholder="Autor">
-                        <input id="capa" placeholder="Capa (URL)">
-    
-                        <button onclick="adicionarLivro()">Salvar</button>
+                
+                    <div class = "livros" id = "meus_livros">
+                        <button id="cadastrarLivro" onclick="mostrarFormularioLivro()">&plus;</button>
+                        <div id="form-livro" style="display:none;">
+                            <input id="titulo" placeholder="Título">
+                            <input id="autor" placeholder="Autor">
+                            <input id="capa" placeholder="Capa (URL)">
+        
+                            <button onclick="adicionarLivro()">Salvar</button>
+                        </div>
                     </div>
-                        <div class = "livros" id = "meus_livros"></div>
-                        
+                </div>
+                <div id="Recomendacoes" class="blocos">
                     <h2  class = "texto">Recomendações</h2>
-                    
                     <div class = "livros" id="lista_recomendacoes">
                         
                     </div>
-
-                
+                </div>
             </section>
             <section id="Busca" class="secao">
                 <div>

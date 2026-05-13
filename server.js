@@ -25,11 +25,11 @@ mongoose.connect(
     console.log(erro);
 });
 
-// Esta é a rota que o seu fetch('/livros') chama
-app.get('/livros', async function(req, res) {
+// Esta é a rota que o seu fetch('/recomendacoes') chama
+app.get('/recomendacoes', async function(req, res) {
     try {
         // O modelo Livro vai buscar na coleção configurada no model/livro.js
-        const livros = await Livro.find(); 
+        const livros = await Livro.find().limit(18); 
         
         // Se o banco retornar uma lista vazia, o console.log no seu script não vai disparar
         res.json(livros); 
@@ -38,54 +38,6 @@ app.get('/livros', async function(req, res) {
         res.status(500).json(error);
     }
 });
-//POST para criar livro 
-// app.post('/livros', async function(req, res){
-
-//     try{
-
-//         var novoLivro = await Livro.create({
-
-//             titulo: req.body.titulo,
-//             autor: req.body.autor,
-//             descricao: req.body.descricao,
-//             capa: req.body.capa
-
-//         });
-
-//         res.json(novoLivro);
-
-//     }
-
-//     catch(erro){
-
-//         res.status(400).json(erro);
-
-//     }
-
-// });
-
-//GET para buscar livros
-// app.get('/livros', async function(req,res){
-//     try {
-//         var livros = await Livro.find();
-//         res.json(livros);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// //Deletar livros 
-// app.delete('/livros/:id',async function (req,res) {
-//     try {
-//         var livro = await Livro.findByIdAndDelete(req.params.id);
-//         res.json(livro);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-
-
 
 const PORT = process.env.PORT || 3000;
 
