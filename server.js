@@ -39,6 +39,57 @@ app.get('/recomendacoes', async function(req, res) {
     }
 });
 
+app.post('/buscar', async function(req, res) {
+    try {
+        livros = await Livro.find({
+            $or: [
+                { titulo: { $regex: req.body.query, $options: 'i' } },
+                { autor: { $regex: req.body.query, $options: 'i' } }
+            ]
+        })
+        res.json(livros);
+    } catch (error) {
+        console.error("Erro no servidor:", error);
+        res.status(500).json(error);
+    }
+
+});
+
+app.post('/cadastro', async function(req, res) {
+    try {
+        var Usuario = require('./model/usuarios');
+        const usuarios = await Usuario.create({
+            username: req.body.username,
+            email: req.body.email,
+            senha: req.body.senha,
+            dataNascimento: req.body.dataNascimento
+        });
+        res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });
+    } catch (error) {
+        console.error("Erro no servidor:", error);
+        res.status(500).json(error);
+    }
+    
+});
+
+app.post('/login', async function(req, res) {
+    try {
+        var Usuario = require('./model/usuarios');
+        const user = await Usuario.findOne({
+            username: req.body.user,
+            senha: req.body.senha
+        });
+        if (user) {
+            res.json({ message: 'Login bem-sucedido!' });
+        } else {
+            res.status(401).json({ message: 'Credenciais inválidas!' });
+        }
+    } catch (error) {
+        console.error("Erro no servidor:", error);
+        res.status(500).json(error);
+    }
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

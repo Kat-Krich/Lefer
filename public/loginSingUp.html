@@ -41,12 +41,12 @@
                         <button class="btn-fechar" onclick="fecharLogin()">&times;</button>
                     </div>
                     <div class="tipoMaisCaixaTexto">
-                        <p>E-mail:</p>
-                        <input placeholder="@gmail.com" type="email" class="caixaTexto">
+                        <p>Usuário:</p>
+                        <input placeholder="user123" type="text" class="caixaTexto" id="usernameLog">
                     </div>
                     <div class="tipoMaisCaixaTexto">
                         <p>Senha:</p>
-                        <input placeholder="senha" type="password" class="caixaTexto">                        
+                        <input placeholder="senha" type="password" class="caixaTexto" id="senhaLog">                        
                     </div>
                     <a href="index.html" id="linkIndex"><button type="submit" class="botao">Entrar</button></a>
                     <p>Caso não tenha se cadastrado ainda</p>
@@ -61,21 +61,21 @@
                     </div>
                     <div class="tipoMaisCaixaTexto">
                         <p>Usuário:</p>
-                        <input placeholder="user123" type="email" class="caixaTexto">
+                        <input placeholder="user123" type="text" class="caixaTexto" id="usernameCad">
                     </div>
                     <div class="tipoMaisCaixaTexto">
                         <p>E-mail:</p>
-                        <input placeholder="@gmail.com" type="email" class="caixaTexto">
+                        <input placeholder="@gmail.com" type="email" class="caixaTexto" id="emailCad">
                     </div>
                     <div class="tipoMaisCaixaTexto">
                         <p>Senha:</p>
-                        <input placeholder="senha" type="password" class="caixaTexto">                        
+                        <input placeholder="senha" type="password" class="caixaTexto" id="senhaCad">                        
                     </div>
                     <div class="tipoMaisCaixaTexto">
-                        <p class="caixaData">Data de Nascimento:<input type="date" class="caixaTexto" id="data"></p>   
+                        <p class="caixaData">Data de Nascimento:<input type="date" class="caixaTexto" id="dataCad"></p>   
                                      
                     </div>
-                    <a href="index.html"><button type="submit" class="botao">Entrar</button></a>
+                    <a href="index.html" onclick="adicionarUsuario()"><button type="submit" class="botao">Entrar</button></a>
                 </div>
             </section>
         </main>

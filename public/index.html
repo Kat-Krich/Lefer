@@ -58,14 +58,7 @@
                     <h2  class = "texto">Meus Livros</h2>
                 
                     <div class = "livros" id = "meus_livros">
-                        <button id="cadastrarLivro" onclick="mostrarFormularioLivro()">&plus;</button>
-                        <div id="form-livro" style="display:none;">
-                            <input id="titulo" placeholder="Título">
-                            <input id="autor" placeholder="Autor">
-                            <input id="capa" placeholder="Capa (URL)">
-        
-                            <button onclick="adicionarLivro()">Salvar</button>
-                        </div>
+                        <button id="cadastrarLivro" onclick="mostrarMenu('btnBusca')">&plus;</button>
                     </div>
                 </div>
                 <div id="Recomendacoes" class="blocos">
@@ -76,39 +69,80 @@
                 </div>
             </section>
             <section id="Busca" class="secao">
-                <div>
-                    <img src = "imagens/logo.png" width="200px" height="200px" id = "Logo">
-                </div>
                 
-                <div id = "box">
-                    <h2  class = "texto">Busca</h2>
-                    <div class = "livros">
-                        <img src = "imagens/logo.png" width="auto" height="auto">
+                <img src = "imagens/logoLefer.png" width="auto" height="150px" class="logo">
+                
+                
+                <div id = "boxBusca" class="blocos">
+                    <div id = "textoBusca">
+                        <input id="campoBusca" placeholder="Digite o título ou autor" class="caixaTexto" onkeypress="if(event.key === 'Enter') buscarLivros();">
+                        <img src = "imagens/lupa.png" width="auto" height="35px" onclick="buscarLivros()"> 
+                    </div>
+
+                    
+                    <div class="livros" id="resultBusca">
+                        
+                        
                     </div>
                 </div>
 
                 
             </section>
             <section id="Metas" class="secao">
-                <div>
-                    <img src = "imagens/logo.png" width="200px" height="200px" id = "Logo">
-                </div>
+                <img src="imagens/logoLefer.png" width="auto" height="150px" class="logo">
+    
+                <h2 class="texto">Minhas Metas</h2>
                 
-                <h2  class = "texto">Minhas Metas</h2>
-                <div class = "livros">
-                    <img src = "imagens/logo.png" width="auto" height="auto">
-                </div>
+                <div class="livros container-metas">
+                    
+                    <div class="card-meta">
+                        <div class="item-meta">
+                            <input type="checkbox" checked id="meta1_1">
+                            <label for="meta1_1" class="concluido">Terminar de ler O Manto Escarlate</label>
+                        </div>
+                        <div class="item-meta">
+                            <input type="checkbox" id="meta1_2">
+                            <label for="meta1_2">Terminar de ler O Amor Maduro</label>
+                        </div>
+                        <p class="prazo-meta">Prazo: 20/04/2026</p>
+                        
+                        <div class="progresso-circular p50">
+                            <span>50%</span>
+                        </div>
+                    </div>
 
+                    <div class="card-meta">
+                        <div class="item-meta">
+                            <input type="checkbox" id="meta2_1">
+                            <label for="meta2_1">Ler Coraline até a página 50</label>
+                        </div>
+                        <p class="prazo-meta">Prazo: 27/04/2026<br>Até 21:30</p>
+                        
+                        <div class="progresso-circular p0">
+                            <span>0%</span>
+                        </div>
+                    </div>
+
+                    <div class="card-meta">
+                        <div class="item-meta">
+                            <input type="checkbox" id="meta3_1">
+                            <label for="meta3_1">Ler 100 livros</label>
+                        </div>
+                        <p class="prazo-meta">Sem prazo</p>
+                        
+                        <div class="progresso-circular p0">
+                            <span>0%</span>
+                        </div>
+                    </div>
+
+                    <button id="adicionarMeta" class="btn-adicionar-meta">&plus;</button>
+
+                </div>
             </section>
             <section id="Biblioteca" class="secao">
-                <div>
-                    <img src = "imagens/logo.png" width="200px" height="200px" id = "Logo">
-                </div>
+                <img src="imagens/logo.png" width="200px" height="200px" class="logo">
 
-                
-                <h2  class = "texto">Biblioteca</h2>
-                <div class = "livros">
-                    <img src = "imagens/logo.png" width="auto" height="auto">
+                <div id="conteudo_biblioteca">
                 </div>
 
             </section>
